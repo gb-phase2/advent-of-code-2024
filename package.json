@@ -1,0 +1,16 @@
+{
+  "name": "advent-of-code-2024",
+  "version": "1.0.0",
+  "description": "My solutions to advent of code for 2024",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gb-phase2/advent-of-code-2024.git"
+  },
+  "author": "gb-phase2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gb-phase2/advent-of-code-2024/issues"
+  },
+  "homepage": "https://github.com/gb-phase2/advent-of-code-2024#readme",
+  "type": "module"
+}
