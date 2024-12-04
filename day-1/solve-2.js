@@ -1,3 +1,4 @@
+import clipboard from "clipboardy";
 import { left, right } from "./data.js";
 
 const convertToCountDict = (arr) => {
@@ -14,3 +15,4 @@ const similarityScore = left.reduce((acc, curr) => {
 }, 0);
 
 console.log("Similarity score: ", similarityScore.toLocaleString());
+clipboard.writeSync(similarityScore.toString());

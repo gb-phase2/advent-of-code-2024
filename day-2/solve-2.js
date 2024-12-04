@@ -1,3 +1,4 @@
+import clipboard from "clipboardy";
 import { reports } from "./data.js";
 
 /**
@@ -50,3 +51,4 @@ const safeReports = reports.filter(report => {
 });
 
 console.log("Safe reports: ", safeReports.length.toLocaleString());
+clipboard.writeSync(safeReports.length.toString());

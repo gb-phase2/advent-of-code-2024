@@ -12,5 +12,8 @@
     "url": "https://github.com/gb-phase2/advent-of-code-2024/issues"
   },
   "homepage": "https://github.com/gb-phase2/advent-of-code-2024#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "clipboardy": "^4.0.0"
+  }
 }
