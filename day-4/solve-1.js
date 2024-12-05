@@ -12,5 +12,5 @@ const wordSearch = new WordSearch(grid, wordToFind);
 
 const count = wordSearch.countWordOccurrences();
 
-console.log("Count of ", wordToFind, ": ", count.toLocaleString()); // 18
+console.log("Count of ", wordToFind, ": ", count.toLocaleString());
 clipboard.writeSync(count.toString());
