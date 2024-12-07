@@ -14,6 +14,8 @@
   "homepage": "https://github.com/gb-phase2/advent-of-code-2024#readme",
   "type": "module",
   "dependencies": {
-    "clipboardy": "^4.0.0"
+    "clipboardy": "^4.0.0",
+    "javascript-obfuscator": "^4.1.1",
+    "terser": "^5.37.0"
   }
 }
