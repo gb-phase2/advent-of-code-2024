@@ -6,13 +6,13 @@ const corruptedMemory = fs.readFileSync('input.txt', 'utf8');
 /**
  * @typedef {object} Instruction
  * @property {string} type
- * @property {Array<number>} values
+ * @property {number[]} values
  */
 
 /**
  * 
  * @param {string} corruptedMemory 
- * @returns {Array<Instruction>} An array of instructions that are not corrupted
+ * @returns {Instruction[]} An array of instructions that are not corrupted
  */
 const getUncorruptedInstructions = (corruptedMemory) => {
     // Make sure 'don't' is listed before 'do' so that it matches first
@@ -32,7 +32,7 @@ const getUncorruptedInstructions = (corruptedMemory) => {
 
 /**
  * Executes the instructions and returns the sum of the results
- * @param {Array<Instruction>} instructions
+ * @param {Instruction[]} instructions
  * @returns {number} The sum of the results of the mul instructions
 */
 const executeMulInstructions = (instructions) => {

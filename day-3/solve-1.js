@@ -5,7 +5,7 @@ const corruptedMemory = fs.readFileSync('input.txt', 'utf8');
 /**
  * 
  * @param {string} corruptedMemory 
- * @returns {Array<array<number>>} An array of mul instructions that are not corrupted
+ * @returns {number[][]} An array of mul instructions that are not corrupted
  */
 const getUncorruptedMulInstructions = (corruptedMemory) => {
     const instructions = corruptedMemory.match(/mul\(\d+,\d+\)/g);
@@ -14,7 +14,7 @@ const getUncorruptedMulInstructions = (corruptedMemory) => {
 
 /**
  * Executes the mul instructions and returns the sum of the results
- * @param {Array<array<number>>} instructions
+ * @param {number[][]} instructions
  * @returns {number} The sum of the results of the mul instructions
 */
 const executeMulInstructions = (instructions) => {

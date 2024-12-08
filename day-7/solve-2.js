@@ -6,8 +6,8 @@ const inputFile = fs.readFileSync('input.txt', 'utf-8').split('\n');
 /**
  * @typedef {Object} CalibrationEquation
  * @property {number} testValue
- * @property {Array<number>} values
- * @property {Array<Array<string>>} solutions
+ * @property {number[]} values
+ * @property {string[][]} solutions
  * @property {Boolean} isSolvable
 */
 
@@ -15,8 +15,8 @@ const operators = ['+', '*', '||'];
 
 /**
  * Parse the input into an array of CalibrationEquations
- * @param {Array<string>} input
- * @returns {Array<CalibrationEquation>}
+ * @param {string[]} input
+ * @returns {CalibrationEquation[]}
 */
 const parseInput = (input) => {
     return input.map((line) => {
@@ -32,8 +32,8 @@ const parseInput = (input) => {
 
 /**
  * Evaluate the expression given values and operators strictly left-to-right
- * @param {Array<number>} values
- * @param {Array<string>} ops
+ * @param {number[]} values
+ * @param {string[]} ops
  * @returns {number} result of the evaluated expression
  */
 const evaluateExpression = (values, ops) => {
@@ -57,7 +57,7 @@ const evaluateExpression = (values, ops) => {
 /**
  * Find all possible solutions for the given equation
  * @param {CalibrationEquation} equation
- * @returns {Array<Array<string>>} solutions
+ * @returns {string[][]} solutions
  */
 const findSolutions = (equation) => {
     const { testValue, values } = equation;
